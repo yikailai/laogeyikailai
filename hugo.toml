@@ -3,7 +3,9 @@ title = "我的随笔博客"
 theme = "PaperMod"
 defaultContentLanguage = "zh"
 hasCJKLanguage = true
-paginate = 10
+
+[pagination]
+pagerSize = 10
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
