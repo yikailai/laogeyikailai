@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://laogeyikailai.com/"
 title = "我的随笔博客"
 theme = "PaperMod"
 defaultContentLanguage = "zh"
