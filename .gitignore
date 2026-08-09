@@ -1,1 +1,5 @@
 public/
+resources/
+hugo.exe
+*.exe
+.DS_Store

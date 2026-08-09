@@ -1,37 +1,68 @@
-baseURL = "http://localhost:1313/"
-title = "我的随笔博客"
-theme = "PaperMod"
+baseURL = "https://xxx.pages.dev/"
+title = "易开来的后花园"
+languageCode = "zh-cn"
 defaultContentLanguage = "zh"
 hasCJKLanguage = true
+theme = "PaperMod"
+paginate = 8
+enableRobotsTXT = true
 
-[pagination]
-pagerSize = 10
+[params]
+description = "人间烟火，众生百态，皆落笔墨之间；不刻意迎合，只忠实写下自己眼中的世界。"
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowWordCount = true
+ShowShareButtons = false
+ShowCodeCopyButtons = false
+ShowBreadCrumbs = true
+ShowPostNavLinks = true
+ShowToc = true
+TocOpen = false
+hideSummary = false
 
-[outputs]
-home = ["HTML", "RSS", "JSON"]
+homeInfoParams = {
+    Title = "易开来的后花园",
+    Content = """
+人间烟火，众生百态，皆落笔墨之间；不刻意迎合，只忠实写下自己眼中的世界。
 
+**花径不曾缘客扫，蓬门今始为君开。**
+"""
+}
+
+[menu]
 [[menu.main]]
-identifier = "home"
 name = "首页"
 url = "/"
 weight = 1
 
 [[menu.main]]
-identifier = "posts"
 name = "文章"
 url = "/posts/"
 weight = 2
 
 [[menu.main]]
-identifier = "tags"
 name = "标签"
 url = "/tags/"
 weight = 3
 
-[params]
-author = "笔者"
-description = "个人随笔记录"
-homeInfoParams = {Title = "欢迎来到我的随笔博客", Content = "日常文字记录"}
-ShowPostNavLinks = true
-ShowCodeCopyButtons = true
-assets.disableFingerprinting = true
+[[menu.main]]
+name = "搜索"
+url = "/search/"
+weight = 4
+
+[outputFormats]
+[outputFormats.search]
+baseName = "search"
+isPlainText = false
+mediaType = "application/json"
+
+[outputFormats.RSS]
+baseName = "index"
+mediaType = "application/rss+xml"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[params.footer]
+copyright = "© 2026 易开来的后花园 | 原创文字随笔"
