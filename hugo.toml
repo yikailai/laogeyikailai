@@ -1,4 +1,4 @@
-baseURL = "https://xxx.pages.dev/"
+baseURL = "https://www.laogeyikailai.com/"
 title = "易开来的后花园"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh"
@@ -66,3 +66,7 @@ category = "categories"
 
 [params.footer]
 copyright = "© 2026 易开来的后花园 | 原创文字随笔"
+
+# 新增：关闭资源指纹，解决Cloudflare样式缓存冲突
+[params.assets]
+disableFingerprinting = true
