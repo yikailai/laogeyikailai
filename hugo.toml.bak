@@ -8,7 +8,7 @@ paginate = 8
 enableRobotsTXT = true
 
 [params]
-description = "人间烟火，众生百态，不刻意迎合，忠实写下自己眼中的世界。"
+description = "人间烟火，众生百态，皆落笔墨之间；不刻意迎合，只忠实写下自己眼中的世界。"
 defaultTheme = "auto"
 ShowReadingTime = true
 ShowWordCount = true
@@ -19,11 +19,6 @@ ShowPostNavLinks = true
 ShowToc = true
 TocOpen = false
 hideSummary = false
-
-# 首页简介改用单行文本，彻底避开TOML多行字符串解析报错
-[params.homeinfo]
-title = "易开来的后花园"
-content = "人间烟火，众生百态，不刻意迎合，忠实写下自己眼中的世界。花径不曾缘客扫，蓬门今始为君开。"
 
 [menu]
 [[menu.main]]
